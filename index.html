@@ -1,10 +1,10 @@
-<!DOCTYPE HTML>
+<!DOCTYPE HTML><!--вказує якою версією html написано сторінку в данному випадку це html 5, на більш старіші версії потрібно робити ссилки-->
 <html>
   <head>
-    <meta charset="utf-8">
-    <title>Personal Site Solonynchyk Borys</title>
-    <link rel="shortcut icon" href="shortcut icon.jfif"> 
-    <!--<style>
+    <meta charset="utf-8"><!--цей тег вказує яким кодуванням має читатись сторінка-->
+    <title>Personal Site Solonynchyk Borys</title><!--створення тексту на вкладці сторінки-->
+    <link rel="shortcut icon" href="shortcut icon.jfif"><!--додавання зображення до вкладинки сайту(де знаходиться title)
+    <style>
     button {
       width: 300px;
     }
@@ -13,7 +13,7 @@
   <body bgcolor="lightgray"> 
     <table>
     <thead>
-    <td>
+    <td align="right">
       <a href="Мої захоплення.html">
         <button>
           Мої захоплення
@@ -61,7 +61,7 @@
       Є теги для редагування тексту, а саме для того щ б текст став <b>Жирним</b> є тег strong, який начебто робить те саме що і тег "b", але його основною відмінністю являється що данний текст стає не просто жирним а і смислово <strong>важливий</strong> для цього сайту і це також допомагає пошуковим системам відправляти саме ваш сайт в рекомендіції для користувачів чи клієнтів. Можна написати текст <i>курсивом</i>. <s>Перекреслений текст</s>.<u>Підкреслений текст</u> і тд й тп.
     </td>
   </tr>
-  <!--Написання коментарів для розтлумачення собі або іншій людині яка буде працювати з вашою версткою в майбутньому, які ніяк не відображаються на сторінці-->
+  <!--Написання коментарів для розтлумачення собі або іншій людині, яка буде працювати з вашою версткою в майбутньому, які ніяк не відображаються на сторінці-->
   <tr>
     <td>
     <img src="img.png">
@@ -81,22 +81,22 @@
 </tr>
 <tr>
   <td colspan="2" align="center">
-    <h2>Лабораторна №2</h2>
+    <h2>Лабораторна №2</h2><!--створення заголовку-->
   </td>
 </tr>
 <tr>
 <td>
-<table bgcolor="lightblue" cellpadding="5px" cellspacing="5px">
+<table bgcolor="lightblue" cellpadding="5px" cellspacing="5px"> <!--тег для створення таблиці, атрибути для зміни кольору фону, відступів від країв знизу та верху-->
   <tr>
     <td>
-      <img src="Borys.jpg" width="100px">
+      <img src="Borys.jpg" width="100px"> <!-- добавлення зображення-->
     </td>
     <td>
       Name: Borys<br>lastname: Solonynchyk
     </td>
   </tr>
   <tr>
-    <td colspan="2" align="center">
+    <td colspan="2" align="center"><!--трибути для об'єднання клітинок та розміщення тексту(в данному випадку по центру)-->
     telephone: 0680224862
     </td>
   <tr>
@@ -105,7 +105,7 @@
     </td>
     <tr>
       <td>
-        HTML 5:&#11088;&#11088;&#11088;
+        HTML 5:&#11088;&#11088;&#11088;<!--тих знаків яких немає на клавіатурі потрібно вписувати їхнього коду-->
       </td>
       <td>
         C++:&#11088;&#11088;
@@ -129,17 +129,22 @@
 </table>
 </td>
 <td>
-<form>
-  <label>Forms:</label>
-  <br>
-  <label>your name:</label>
-  <input placeholder="Borys"></input><input type="submit"></input>
-</form>
+<form action="mailto:bsoloninchik@gmail.com" method="post" enctype="text/plain">
+  <!--такий тип відправки повідомлень на пошту працює тільки з включеною програмою mail, використовувати PhP не став так як ми його не вчили-->
+          <p>Ім'я: <input type="text"></p>
+          <p>Емайл: <input type="email"><p>
+          <p>Текст повідомлення:</p>
+          <textarea cols="30" rows="4"></textarea>
+          <br>
+          <input type="submit" style="color: green;">
+            <p>Відправити</p>
+          </button>
+        </form>
 </td>
 </tr>
 <tr>
   <td colspan="2" align="center">
-    <font size = "8"><strong>Атрибути таблиць</strong></font>
+    <font size = "8"><!--тег для редагування таксту без икористання css--><strong>Атрибути таблиць</strong></font>
   </td>
 </tr>
 <tr>
