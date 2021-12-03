@@ -1,0 +1,89 @@
+#body {
+      position: absolute;
+      top: 0;
+      left: 0;
+}
+section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+}
+.content {
+      width: 75%;
+      border-radius: 20px;
+      background-color: lightcoral;
+      margin: 10px;
+      text-align: center;
+
+}
+.father-box {
+      display: flex;
+      justify-content: space-around;
+}
+.box {
+
+}
+hr {
+      border-style: dotted; /*зміна стилю границі на крапки*/
+      border-width: 10px; /*ширина границі*/
+      border-color: navy; /*зміна кольору границі*/
+
+      width: 75%;
+}
+#menu {
+      display: flex;
+      flex-direction: column;
+}
+#b1 {
+      border-radius: 20px 0 0 20px; /*Заокруглення кутів границі*/
+}
+#b2 {
+      border-radius: 0px 20px 20px 0px;
+}
+
+/*Файл стилів підключений до всіх 3 сторінок сайту і якщо стилі на самих сторінках не перекривають ці то вони діють по всьому сайті*/
+button.slide {
+      width: 200px; /*зміна ширини*/
+      height: 25px; /*зміна висоти*/
+      
+      color: white; /*зміна кольору текста*/
+      background-color: darkslategrey; /*зміна кольору фону*/
+      
+      font-style: italic;/*заміна стилю шрифта*/
+}
+.slide:hover { /*починає діяти як тільки на елемент наводиться мишка*/
+      background-color: darkgrey;
+      color: black;
+}
+.slide:focus { /*починає діяти коли на кнопку натиснути або ж після натискання і до наступного натискання на щось інше*/
+      color: red;
+}
+
+p, h1, h2, a, li {
+  font-family: cursive;/*як в ворді змінює "сім'ю" шрифту, а сім'я, це, в свою чергу, деякий схожий набір стилів*/
+  font-variant: small-caps; /*робить так що б у усіх параграфах малі букви хоч по розміру і малі але виглядали як великі*/
+}
+
+#b1 {
+      border-radius: 0 20px 0 0; /*Заокруглення кутів границі*/
+}
+#b2 {
+      border-radius: 0;
+}
+#b3 {
+      height: 40px;
+      border-radius: 0 0 20px 0;
+}
+header {
+      height: 120px;
+      background-color: lightsalmon;
+
+      display: flex;
+      align-items: center;
+}
+h1 {
+      text-align: center;
+      width: 100%;
+      color: navy;
+}
+
