@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!--для правильного відображення на телефонах і їх продіних пристроїв-->
+
+  <link rel="icon" href="icon.png">
+  <style type="text/css">
+    body { /*стилі для всьієї сторінки*/
+  margin: 0; /*видалення відступів від країв сайту*/
+  background: url(backg.jpg) 100%; /*встановлення картинки на фон*/
+}
+#back { /*дів для фону що стоїть за header and nav*/
+  background: url(icon2.jpg) 100%; /*не тільки встановлює картинку на фон а ще й вказує її величину*/
+  background-repeat: repeat; /*хоча це значення за замовчуванням але просто що б покзати вставив*/
+  opacity: .7; /*коефіціент прозрачності*/
+}
+nav { /*навігаціонний бокс*/
+  display: flex;
+  height: 75px; /*визначення висоти*/
+  float: right; /*виставляє елементи по правій стороні*/
+}
+.h { /*Бокс з заголовком сайта*/
+  position: fixed; /*фіксує елемент на "моніторі" і при скролінгу вн встається де і був*/
+  top: 0; /*позиціонування*/
+  right: 0;
+  opacity: .9;
+  vertical-align: middle; /*вирівнювання тексту поцентру вертикалі*/
+  padding-bottom: 30px; /*відступ від контенту до країв самого елементу знизу*/
+  border-radius: 0 0 0 20px; /*заокруглення країв*/
+  background-color: silver; 
+  font-size: 50px; /*розмір шрифта*/
+  font-family: cursive;/*як в ворді змінює "сім'ю" шрифту, а сім'я, це, в свою чергу, деякий схожий набір стилів*/
+}
+
+header { /*друга частина верхнього блоку*/
+  height: 400px;
+
+}
+section { /*секція з основним контентом*/
+  margin: 75px 0% 75px 0%; /*визначення відступів навколо елемента(top, right, bottom, left)*/
+  height: 820px;
+
+}
+/*<p>*/
+#main-text {
+  font-size: 20px;
+  text-align: center;
+  height: 200px;
+  color: lightgoldenrodyellow;
+  margin: 0; /*для того що б блок що містить флекс бокси зайняв всю ширину що йому залишилась*/
+}
+/*div для того що б виконати розміщення 2 div в ньому за допомогою display: flex;*/
+#content {
+  flex-wrap: wrap; /*дозволяє перепіщення на наступний рядок якщо елемент не влазить в екран*/
+  height: 620px;
+  display: flex; /*робимо з даного бокса - flex-box*/
+  justify-content: space-around; /*притуляє до країв дочірні елементи та робить відступи між ними рівними між собою*/
+  align-items: flex-start; /*виставляє дочірні елементи зинзу бокса*/
+}
+/*2 div що розташовані знизу section*/
+.content-box {
+  border-radius: 50% 20% 50% 50%;
+  height: 300px;
+  width: 300px;
+  background-color: lightgoldenrodyellow;
+}
+#box1 { /*1 бокс з картинкою*/
+  background-color: lightgoldenrodyellow;
+  border-radius: 50% 20% 50% 50%;
+  background: url(pianoSpace.png);
+  background-size: 100%; /*визначення розміру картинки фону*/
+  height: 300px;
+  width: 300px;
+}
+#box2 { /*2 бокс з картинкою*/
+  margin: 0;
+  background: url(svc.jpeg);
+  background-size: 100%;
+}
+/*div над footer*/
+#pre-footer {
+  text-align: center;
+  vertical-align: middle;
+  height: 55px;
+  background-color: silver;
+}
+#pre-p { /*параграф в pre-footer*/
+  padding-top: 18px; /*відступ від контенту до верхгьої грані*/
+color: black;
+font-family: sans-serif;
+}
+
+footer { /*підніжжя сайту*/
+  opacity: .8;
+  text-align: center;
+  height: 100px;
+  background-color: black;
+}
+#footer-p { /*параграф в середині піднжжя сайту*/
+  margin: 0;
+  padding-top: 40px;
+color: lightgoldenrodyellow;
+}
+  </style>
+    
+  <title>Wusic World</title>
+</head>
+  
+<body>
+  <div id="back">
+  <nav>
+    <div class="h">Wusic World</div>
+  </nav>
+  
+  <header></header>
+  </div>
+  <section>
+    <p id="main-text">
+      Заплановані заходи в м. Києві<br>
+      22.05 - 11.12.2021 Piano Space. Сузір'я Франції<br>
+      19.12 Баста<br>
+      25.12 Святковий концерт
+    </p>
+    
+    <div id="content">
+      <div class="content-box">
+        <div class="" id="box1">
+
+        </div>
+      </div>
+      
+      <div class="content-box" id="box2">
+        
+    </div>
+    </div>
+  </section>
+
+  
+  <div id="pre-footer">
+    <p id="pre-p">Have problems with site? My telegram: @Warionit7</p>
+  </div>
+  
+  <footer>
+    <p id="footer-p">2021 @Wusic World <br>Autor: Solonynchyk Borys</p>
+  </footer>
+
+</body>
+</html>
