@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>paralax</title>
+
+	<style media="screen"> /*підключаєм можливість працювати з різними розширеннями екрану*/
+		body {
+			margin: 0;
+		}
+		.parallax { /*для фону забороняємо скролитись разом з сойтом та підключаємо фон*/
+			background: url(icon.jpg);
+			background-attachment: fixed;
+		}
+		/*забороняємо для девайсів з нижче сказаними розширеннями бачити parallax*/
+		@media only screen and (min-width: 320px) and (max-width: 1366px){
+  			.parallax {
+    			background-attachment: scroll;
+     			background-size: 100% auto;
+   			}
+		 }
+		section { /*нижче просто прописую характеристики елементів сторінки та виставляю їх в колонку*/
+			display: flex;
+			flex-direction: column;
+
+		}
+		.flex-content {
+			background-color: silver;
+			width: 200px;
+			height: 200px;
+			border-radius: 20px;
+			margin: 10px;
+
+		}
+	</style>
+</head>
+<body >
+	<div class="parallax"> <!--бокс з фоном для паралайзу-->
+	<a href="index.html">
+        <button class="slide" id="b1">
+          Повернення до лекційного матеріалу
+        </button>
+    </a>
+	<a href="Мої захоплення.html">
+      <button class="slide" id="b1">
+        Мої захоплення
+      </button>
+    </a>
+    <a href="Про себе.html">
+      <button class="slide" id="b2">
+        Про себе
+      </button>
+    </a>
+
+    <section>
+    	<div class="flex-content">
+    		
+    	</div>
+		<div class="flex-content">
+    		
+    	</div>
+    	<div class="flex-content">
+    		
+    	</div>
+    	<div class="flex-content">
+    		
+    	</div>
+    	<div class="flex-content">
+    	</div>
+    </section>
+</div>
+</body>
+</html>

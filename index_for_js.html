@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>index for js</title>
+	<style type="text/css">
+		body {
+			height: 500px;
+			background: url(icon.jpg);
+			background-size: 100%;
+		}
+		.flags { /*флажок біля наппису переможця*/
+			width: 30px;
+			opacity: .8;
+		}
+		.wins {
+			position: absolute;
+			top: -50px;
+			height: 50px;
+			width: 100%;
+			text-align: center;
+			
+			font-size: 30px;
+			font-family: cursive;
+			/*свойства для анімації, її назва, час, де опиниться елемент після неї*/
+			animation-name: div-animation;
+			animation-duration: 4s;
+			animation-fill-mode: forwards;
+		}
+		#win1 { /*виключення дисплею для подальшого вибару того що треба показати*/
+			display: none;
+		}
+		#win2 {
+			display: none;			
+		}
+		#draw {
+			display: none;			
+		}
+		@keyframes div-animation { /*опис анімації*/
+			o% {
+				top: -50px;
+			}
+			60% {
+				top: 120px;
+			}
+			75% {
+				top: 100px;
+			}
+			100% {
+				top: 115px;
+			}
+		}
+		section { /*основний контент*/
+			display: flex;
+			justify-content: center;
+			align-items: flex-end;
+			height: 100%;
+		}
+		.player { /*діви де будуть кубики*/
+			margin: 20px;
+			width: 200px;
+			height: 300px;
+			background-color: lightblue;
+			text-align: center;
+			border-radius: 20px;
+		}
+		.img1 { /*свойства зображення: самого кубика1*/
+			position: absolute;
+			right: 55%;
+			top: 45%;
+			display: none; /*скриваємо його*/
+		}
+		.img2 { /*кубика2*/
+			position: absolute;
+			right: 40%;
+			top: 45%;
+			display: none;
+		}
+	</style>
+</head>
+<body>
+	<div align="center" class="wins" id="win1"> <!--Діви з флажками надписами про переможця чи ничиї-->
+		<img src="images.png" class="flags">Player 1 Wins!
+	</div>
+
+	<div align="center" class="wins" id="win2">
+		Player 2 Wins!<img src="images.png" class="flags">
+	</div>
+
+	<div align="center" class="wins" id="draw">
+		Draw!
+	</div>
+
+	<section> <!--діви з кубиками, надписями де який гравець-->
+		<div class="player" id="play1">
+			<p>Player 1</p>
+			<div class = "cube" id="cube1">
+				<img src="с1.png" id="a1" class="img1">
+				<img src="с2.png" id="a2" class="img1">
+				<img src="с3.png" id="a3" class="img1">
+				<img src="с4.png" id="a4" class="img1">
+				<img src="с5.png" id="a5" class="img1">
+				<img src="с6.png" id="a6" class="img1">
+
+			</div>
+		</div>
+		<div class="player" id="play2">
+			<p>Player 2</p>
+			<div class = "cube" id="cube1">
+				<img src="с1.png" id="b1" class="img2">
+				<img src="с2.png" id="b2" class="img2">
+				<img src="с3.png" id="b3" class="img2">
+				<img src="с4.png" id="b4" class="img2">
+				<img src="с5.png" id="b5" class="img2">
+				<img src="с6.png" id="b6" class="img2">
+			</div>
+		</div>
+	</section>
+	<a href="index.html">
+      <button class="slide" id="b2">
+       Повернутись
+      </button>
+    </a>
+	<script src="js.js"></script> <!--підключений js-->
+</body>
+</html>
